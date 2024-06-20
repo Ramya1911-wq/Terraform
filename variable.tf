@@ -11,9 +11,13 @@ variable "instance_type" {
 }
 
 variable "username" {
+  type = string
+  description = "RDS user name"
   default = "dbuser"
 }
 
 variable "password" {
+  type = string
+  description = "RDS password"
   default = "dbuser123"
 }
